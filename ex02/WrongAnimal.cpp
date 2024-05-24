@@ -4,11 +4,11 @@ WrongAnimal::WrongAnimal() : _type("WrongAnimal") {
     std::cout << "WrongAnimal constructed.\n";
 }
 
-WrongAnimal::WrongAnimal(const WrongAnimal& other) : _type(other._type) {
+WrongAnimal::WrongAnimal(const WrongAnimal &other) : _type(other._type) {
     std::cout << "WrongAnimal copy constructed.\n";
 }
 
-WrongAnimal& WrongAnimal::operator=(const WrongAnimal& other) {
+WrongAnimal &WrongAnimal::operator=(const WrongAnimal &other) {
     if (this != &other) {
         _type = other._type;
     }
