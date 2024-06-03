@@ -1,6 +1,6 @@
 NAME = amateria
 
-SRC = main.cpp Amateria.cpp Character.cpp Cure.cpp Ice.cpp MateriaSource.cpp
+SRC = main.cpp AMateria.cpp Character.cpp Cure.cpp Ice.cpp MateriaSource.cpp
 
 OBJ_DIR = obj
 OBJ = $(addprefix $(OBJ_DIR)/,$(SRC:.cpp=.o))

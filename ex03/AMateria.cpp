@@ -1,8 +1,25 @@
 #include "AMateria.hpp"
 
-AMateria::AMateria(std::string const &type) : _type(type) {}
+// Default Constructor
+AMateria::AMateria() : _type("") {}
 
+// My Constructor
+AMateria::AMateria(std::string const &other) : _type(other) {}
+
+// Copy assignment operator
+AMateria &AMateria::operator=(const AMateria &other) {
+    if (this != &other) {
+        _type = other._type;
+    }
+    return *this;
+}
+
+// Copy constructor
+AMateria::AMateria(const AMateria &other) : _type(other._type) {}
+
+// Destructor
 AMateria::~AMateria() {}
+
 
 std::string const & AMateria::getType() const {
     return _type;

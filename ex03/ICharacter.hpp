@@ -3,10 +3,9 @@
 
 #include "AMateria.hpp"
 
+class AMateria;
+
 class ICharacter {
-    protected:
-        const std::string _name;
-    
     public:
         virtual ~ICharacter() {}
         
