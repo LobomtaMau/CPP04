@@ -79,7 +79,8 @@ void Character::unequip(int idx) {
         if (_unequipCount < 100) {
             unequipped[_unequipCount++] = inventory[idx];
             inventory[idx] = NULL;
-        }
+        }else if (_unequipCount >100)
+            _unequipCount = 1;
     }
 }
 
